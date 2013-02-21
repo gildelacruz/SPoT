@@ -11,6 +11,7 @@
 @interface ImageViewController () <UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) UIImageView *imageView;
+@property (nonatomic)BOOL userDidZoom;
 @end
 
 @implementation ImageViewController
@@ -44,6 +45,30 @@
         }
     }
 }
+
+- (void)viewDidLayoutSubviews
+{
+    [self autoZoom];
+}
+
+- (void)scrollViewDidZoom:(UIScrollView *)scrollView
+{
+    self.userDidZoom = YES;
+}
+
+- (void)autoZoom // Borrowed from RZulkoski
+    // Can find original at https://github.com/RZulkoski/SPoT
+{
+    if (self.imageView.image && !self.userDidZoom) { // If the user hasn't zoomed yet and we have an image
+        CGFloat widthRatio = self.scrollView.bounds.size.width / self.imageView.bounds.size.width;
+        CGFloat heightRatio = self.scrollView.bounds.size.height / self.imageView.bounds.size.height;
+        
+        self.scrollView.zoomScale = (widthRatio > heightRatio) ? widthRatio : heightRatio;
+        self.userDidZoom = NO;
+    }
+}
+
+
 
 // lazy instantiation
 

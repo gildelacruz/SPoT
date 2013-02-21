@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A126FB116D6743900AD39E2 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A126FB016D6743900AD39E2 /* iPadStoryboard.storyboard */; };
 		8A4D7FF816D54D7800A273E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4D7FF716D54D7800A273E6 /* UIKit.framework */; };
 		8A4D7FFA16D54D7800A273E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4D7FF916D54D7800A273E6 /* Foundation.framework */; };
 		8A4D7FFC16D54D7800A273E6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4D7FFB16D54D7800A273E6 /* CoreGraphics.framework */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A126FB016D6743900AD39E2 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		8A4D7FF416D54D7800A273E6 /* SPoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4D7FF716D54D7800A273E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8A4D7FF916D54D7800A273E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -105,6 +107,7 @@
 		8A4D7FFD16D54D7800A273E6 /* SPoT */ = {
 			isa = PBXGroup;
 			children = (
+				8A126FB016D6743900AD39E2 /* iPadStoryboard.storyboard */,
 				8A4D800F16D54D7800A273E6 /* MainStoryboard.storyboard */,
 				8ACFA5FA16D66E780008C315 /* RecentsTVC.h */,
 				8ACFA5FB16D66E780008C315 /* RecentsTVC.m */,
@@ -208,6 +211,7 @@
 				8A4D800C16D54D7800A273E6 /* Default@2x.png in Resources */,
 				8A4D800E16D54D7800A273E6 /* Default-568h@2x.png in Resources */,
 				8A4D801116D54D7800A273E6 /* MainStoryboard.storyboard in Resources */,
+				8A126FB116D6743900AD39E2 /* iPadStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +319,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SPoT/SPoT-Prefix.pch";
 				INFOPLIST_FILE = "SPoT/SPoT-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -326,7 +332,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SPoT/SPoT-Prefix.pch";
 				INFOPLIST_FILE = "SPoT/SPoT-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
