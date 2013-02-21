@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FlickrTagTVC : UITableViewController
+@interface FlickrTagsTVC : UITableViewController
 
 @property (strong, nonatomic) NSArray *tags;
 

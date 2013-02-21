@@ -25,8 +25,6 @@
 {
     [super viewDidLoad];
     
-    //self.tag = @"classroom";
-    
     NSMutableArray *photosWithTag = [[NSMutableArray alloc] init];
 
     

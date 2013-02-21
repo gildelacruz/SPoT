@@ -7,6 +7,7 @@
 //
 #import "FlickrPhotoTVC.h"
 #import "FlickrFetcher.h"
+#import "RecentImages.h"
 
 @interface FlickrPhotoTVC ()
 
@@ -20,6 +21,7 @@
     [self.tableView reloadData];
 }
 
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([sender isKindOfClass:[UITableViewCell class]]) {
@@ -31,6 +33,7 @@
                                                      format:FlickrPhotoFormatLarge];
                     [segue.destinationViewController performSelector:@selector(setImageURL:) withObject:url];
                     [segue.destinationViewController setTitle:[self titleForRow:indexPath.row]];
+                    [RecentImages addImage:self.photos[indexPath.row]];
                 }
             }
         }
@@ -51,7 +54,7 @@
 
 - (NSString *)subtitleForRow:(NSUInteger)row
 {
-    return [self.photos[row][FLICKR_PHOTO_DESCRIPTION] description];
+    return [[self.photos[row] valueForKeyPath:FLICKR_PHOTO_DESCRIPTION] description];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView

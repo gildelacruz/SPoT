@@ -6,14 +6,14 @@
 //  Copyright (c) 2013 seaDevelopment. All rights reserved.
 //
 
-#import "FlickrTagTVC.h"
+#import "FlickrTagsTVC.h"
 #import "FlickrFetcher.h"
 
-@interface FlickrTagTVC ()
+@interface FlickrTagsTVC ()
 
 @end
 
-@implementation FlickrTagTVC
+@implementation FlickrTagsTVC
 @synthesize tags = _tags;
 - (void)setTags:(NSArray *)tags
 {

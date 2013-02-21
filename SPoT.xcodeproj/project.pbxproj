@@ -21,8 +21,10 @@
 		8A4D802116D54EB600A273E6 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4D802016D54EB600A273E6 /* ImageViewController.m */; };
 		8A4D803016D554D100A273E6 /* FlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4D802F16D554D100A273E6 /* FlickrPhotoTVC.m */; };
 		8A4D803316D5564E00A273E6 /* FlickrPhotosWithTagTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4D803216D5564E00A273E6 /* FlickrPhotosWithTagTVC.m */; };
-		8A6DF85A16D55F2200549B06 /* FlickrTagTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DF85916D55F2200549B06 /* FlickrTagTVC.m */; };
+		8A6DF85A16D55F2200549B06 /* FlickrTagsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DF85916D55F2200549B06 /* FlickrTagsTVC.m */; };
 		8A6DF85D16D5684900549B06 /* FlickStanfordTagsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6DF85C16D5684900549B06 /* FlickStanfordTagsTVC.m */; };
+		8ACFA5F716D663400008C315 /* RecentImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACFA5F616D663400008C315 /* RecentImages.m */; };
+		8ACFA5FC16D66E780008C315 /* RecentsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACFA5FB16D66E780008C315 /* RecentsTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,10 +51,14 @@
 		8A4D802F16D554D100A273E6 /* FlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTVC.m; sourceTree = "<group>"; };
 		8A4D803116D5564E00A273E6 /* FlickrPhotosWithTagTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotosWithTagTVC.h; sourceTree = "<group>"; };
 		8A4D803216D5564E00A273E6 /* FlickrPhotosWithTagTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotosWithTagTVC.m; sourceTree = "<group>"; };
-		8A6DF85816D55F2200549B06 /* FlickrTagTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrTagTVC.h; sourceTree = "<group>"; };
-		8A6DF85916D55F2200549B06 /* FlickrTagTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrTagTVC.m; sourceTree = "<group>"; };
+		8A6DF85816D55F2200549B06 /* FlickrTagsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrTagsTVC.h; sourceTree = "<group>"; };
+		8A6DF85916D55F2200549B06 /* FlickrTagsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrTagsTVC.m; sourceTree = "<group>"; };
 		8A6DF85B16D5684900549B06 /* FlickStanfordTagsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickStanfordTagsTVC.h; sourceTree = "<group>"; };
 		8A6DF85C16D5684900549B06 /* FlickStanfordTagsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickStanfordTagsTVC.m; sourceTree = "<group>"; };
+		8ACFA5F516D663400008C315 /* RecentImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentImages.h; sourceTree = "<group>"; };
+		8ACFA5F616D663400008C315 /* RecentImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentImages.m; sourceTree = "<group>"; };
+		8ACFA5FA16D66E780008C315 /* RecentsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentsTVC.h; sourceTree = "<group>"; };
+		8ACFA5FB16D66E780008C315 /* RecentsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,17 @@
 		8A4D7FFD16D54D7800A273E6 /* SPoT */ = {
 			isa = PBXGroup;
 			children = (
+				8A4D800F16D54D7800A273E6 /* MainStoryboard.storyboard */,
+				8ACFA5FA16D66E780008C315 /* RecentsTVC.h */,
+				8ACFA5FB16D66E780008C315 /* RecentsTVC.m */,
+				8ACFA5F516D663400008C315 /* RecentImages.h */,
+				8ACFA5F616D663400008C315 /* RecentImages.m */,
 				8A4D802E16D554D000A273E6 /* FlickrPhotoTVC.h */,
 				8A4D802F16D554D100A273E6 /* FlickrPhotoTVC.m */,
 				8A4D803116D5564E00A273E6 /* FlickrPhotosWithTagTVC.h */,
 				8A4D803216D5564E00A273E6 /* FlickrPhotosWithTagTVC.m */,
-				8A4D800F16D54D7800A273E6 /* MainStoryboard.storyboard */,
-				8A6DF85816D55F2200549B06 /* FlickrTagTVC.h */,
-				8A6DF85916D55F2200549B06 /* FlickrTagTVC.m */,
+				8A6DF85816D55F2200549B06 /* FlickrTagsTVC.h */,
+				8A6DF85916D55F2200549B06 /* FlickrTagsTVC.m */,
 				8A6DF85B16D5684900549B06 /* FlickStanfordTagsTVC.h */,
 				8A6DF85C16D5684900549B06 /* FlickStanfordTagsTVC.m */,
 				8A4D801F16D54EB600A273E6 /* ImageViewController.h */,
@@ -214,8 +224,10 @@
 				8A4D802116D54EB600A273E6 /* ImageViewController.m in Sources */,
 				8A4D803016D554D100A273E6 /* FlickrPhotoTVC.m in Sources */,
 				8A4D803316D5564E00A273E6 /* FlickrPhotosWithTagTVC.m in Sources */,
-				8A6DF85A16D55F2200549B06 /* FlickrTagTVC.m in Sources */,
+				8A6DF85A16D55F2200549B06 /* FlickrTagsTVC.m in Sources */,
 				8A6DF85D16D5684900549B06 /* FlickStanfordTagsTVC.m in Sources */,
+				8ACFA5F716D663400008C315 /* RecentImages.m in Sources */,
+				8ACFA5FC16D66E780008C315 /* RecentsTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,12 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "RecentImages.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //NSLog(@"%@", [RecentImages getImages]);
     return YES;
 }
 							

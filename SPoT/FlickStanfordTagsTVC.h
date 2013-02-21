@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 seaDevelopment. All rights reserved.
 //
 
-#import "FlickrTagTVC.h"
+#import "FlickrTagsTVC.h"
 
-@interface FlickStanfordTagsTVC : FlickrTagTVC
+@interface FlickStanfordTagsTVC : FlickrTagsTVC
 
 @end
